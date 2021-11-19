@@ -1,0 +1,29 @@
+<!--pages/works/pay/pay.wxml-->
+<view class="wrapper page-padding">
+  <view class="top flex flex-column align-center">
+    <image class="avatar round8" src="{{data.teacher.img}}"></image>
+    <view class="top-info full-width flex flex-column align-center mt10">
+      <view class="color3 bold font15 text-center">{{data.teacher.name}}</view>
+      <view class="color-a font12">{{data.teacher.desc}}</view>
+    </view>
+  </view>
+  <view class="content full-width mt30">
+    <view class="item bg-white round8 mb15 flex" wx:for="{{list}}" wx:key="{{item.csm_id}}" bindtap="changePackage"
+      data-index="{{index}}">
+      <view class="left flex flex-column">
+          <view class="color3 bold font15">{{item.title}}</view>
+          <view class="color-a font12" style="white-space:pre-wrap">{{item.desc}}</view>
+      </view>
+      <view class="middle main-color flex align-center justify-center">
+        <text class="font12">¥</text>
+        <text class="font16">{{item.price}}</text>
+      </view>
+      <view class="right flex align-center justify-center">
+        <image class="radio"
+          src="{{currentPackage == index ? '/common/img/works/icon-radio-active.png':'/common/img/works/icon-radio-unActive.png'}}">
+        </image>
+      </view>
+    </view>
+  </view>
+  <view class="bottom-btn main-bg font14 bold white flex align-center justify-center" bindtap="handlePay">立即支付</view>
+</view>

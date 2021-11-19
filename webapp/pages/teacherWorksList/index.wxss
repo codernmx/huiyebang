@@ -1,0 +1,88 @@
+page{
+    height: 100%;
+    background: #D83A3E;
+    overflow-y: hidden;
+}
+.box{
+    margin-top: 100rpx;
+    background: #FFFFFF;
+    height: 100%;
+    border-top-left-radius:80rpx;
+    border-top-right-radius:80rpx;
+    padding: 0 60rpx;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60rpx 0;
+    /* padding: 80rpx; */
+}
+image{
+    width: 90rpx;
+    height: 70rpx;
+}
+.one,
+.two{
+    width: 50%;
+    display: flex;
+}
+
+
+.head {
+    width: 150rpx;
+    height: 150rpx;
+    /* background: #000; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 60rpx;
+    /* margin-right: 30rpx; */
+}
+.centerWord{
+    display: flex;
+    flex-direction: column;
+}
+.mini{
+    color: #A9A6A7;
+    font-size: 26rpx;
+}
+.listBox{
+    background: #FFE9E8;
+    height: 180rpx;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+}
+.img{
+    width: 55%;
+    background: rgb(235, 228, 228);
+    border-radius: 20rpx;
+    overflow: hidden;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.date{
+    color: #A9A6A7;
+    font-size: 22rpx;
+    text-align: left;
+    margin-top: 10rpx;
+   
+}
+.del{
+    width: 60rpx;
+    height: 60rpx;
+    background: #D63E3E;
+    font-size: 24rpx;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    /* margin-top: 100rpx; */
+    margin-top: 60rpx;
+}

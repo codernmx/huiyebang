@@ -1,0 +1,18 @@
+<!--pages/works/teacherList/teacherList.wxml-->
+<view class="wrapper page-padding">
+  <view class="content full-width">
+    <view class="item bg-white round8 mb15 flex" wx:for="{{list}}" wx:key="{{item.uid}}" bindtap="changeTeacher" data-index="{{index}}">
+      <view class="left flex align-center">
+        <image class="avatar round8" src="{{item.img}}"></image>
+        <view class="left-info flex flex-column ml5 flex1">
+          <view class="color3 bold font15 ellipsis">{{item.name}}</view>
+          <view class="color-a font12 ellipsis-2">{{item.desc}}</view>
+        </view>
+      </view>
+      <view class="right flex align-center justify-center">
+        <image class="radio" src="{{currentTeacher == index ? '/common/img/works/icon-active.png':'/common/img/works/icon-unActive.png'}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="bottom-btn main-bg font14 bold white flex align-center justify-center" bindtap="handleStep">下一步</view>
+</view>

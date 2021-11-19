@@ -1,0 +1,46 @@
+
+.page {
+    padding: 0 30rpx;
+}
+
+.headBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+
+.head {
+    width: 120rpx;
+    height: 120rpx;
+    /* background: #000; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30rpx;
+}
+
+.title {
+    font-weight: 600;
+    letter-spacing: 5rpx;
+    font-size: 32rpx;
+}
+
+.tit {
+    color: #C6C3C6;
+    font-size: 28rpx;
+    margin-top: 6rpx;
+}
+
+.word {
+    color: #C6C3C6;
+}
+.img{
+    margin-top: 30rpx;
+    background: rgb(212, 202, 202);
+    height: 300rpx;
+    border-radius: 30rpx;
+    overflow: hidden;
+}
+
+.itemBox{
+    margin-bottom: 30rpx;
+}

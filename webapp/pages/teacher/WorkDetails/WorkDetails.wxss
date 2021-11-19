@@ -1,0 +1,52 @@
+/* pages/teacher/WorkDetails/WorkDetails.wxss */
+.box {
+    width: 100%;
+    height: 100vh;
+    background: #1D1D1D;
+    position: relative;
+}
+
+.img {
+    transform: translateY(-50%);
+    top:50vh;
+    position: absolute;
+    width: 100%;
+}
+
+.bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 61rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+
+    background: #D93B3C;
+    border-radius: 34rpx;
+    display: flex;
+    justify-content: center;
+    line-height: 67rpx;
+    font-size: 24rpx;
+    color: #fff;
+}
+
+.button__img {
+    margin-top: 13rpx;
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 8rpx;
+    margin-right: 14rpx;
+}
+
+.one {
+    width: 283rpx;
+    height: 67rpx;
+    margin-right: 32rpx;
+}
+
+.two {
+    width: 201rpx;
+    height: 67rpx;
+}

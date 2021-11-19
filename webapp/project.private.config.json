@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/works/add/add",
+          "pathName": "pages/works/add/add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/applyCorrecting/applyCorrecting",
+          "pathName": "pages/works/applyCorrecting/applyCorrecting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/teacherList/teacherList",
+          "pathName": "pages/works/teacherList/teacherList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/pay/pay",
+          "pathName": "pages/works/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/completeWork/completeWork",
+          "pathName": "pages/works/completeWork/completeWork",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "教师作品列表",
+          "pathName": "pages/teacherWorksList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "收支明细",
+          "pathName": "pages/paymentDetail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "主页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/works/index",
+          "pathName": "pages/works/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

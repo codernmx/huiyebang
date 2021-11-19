@@ -1,0 +1,52 @@
+<!--pages/works/index.wxml-->
+<view class="wrapper page-padding">
+  <!-- 添加卡片 -->
+  <view class="add-card bg-white flex align-center round8" bindtap="jumpAdd">
+    <view class="left flex align-center">
+      <!-- <image src="{{addCardInfo.img}}" class="add-avatar round"></image> -->
+      <view class="add-avatar round">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="text-info flex flex-column ml10">
+        <text class="title font15 bold color3">{{addCardInfo.title}}</text>
+        <text class="desc color-a font12">{{addCardInfo.desc}}</text>
+      </view>
+    </view>
+    <view class="right flex justify-center align-center">
+      <image src="/common/img/works/icon-add.png"></image>
+    </view>
+  </view>
+  <!-- 作品列表 -->
+  <view class="content-title flex align-center justify-between mt25">
+    <view class="title font15 bold color3 bold">作品列表</view>
+    <view class="flex align-end font12 tab">
+      <text class="mr5 {{currentTab == '1' ? 'tabActive' : ''}}" bindtap="handleChangeTab" data-id="1">所有作品</text>|
+      <text class="ml5 {{currentTab == '2' ? 'tabActive' : ''}}" bindtap="handleChangeTab" data-id="2">已批改</text>
+    </view>
+  </view>
+  <!-- 作品列表 -->
+  <view class="content-wrapper mt10" wx:if="{{list.length}}">
+    <view class="item bg-white round8 flex align-center justify-between mt15" wx:for="{{list}}" wx:key="item.id">
+      <image src="{{item.img}}" class="coverImg round8" mode="aspectFill" data-url="{{item.img}}" catchtap="handlePreView"></image>
+      <view class="right-con flex flex-column flex1 ml10">
+        <view class="title font15 bold color3 ellipsis-2">{{item.title}}</view>
+        <view class="status font12 {{item.status == 4 ? 'main-color' : 'color-a' }}">{{item.status_text}}</view>
+        <view class="bottom flex justify-between align-center">
+          <text class="time font10 color-a">{{item.time}} 上传</text>
+          <!-- <text class="btn main-bg white font10" wx:if="{{item.status == 1}}" bindtap="handleCorrecting" data-id="{{item.id}}">申请</text> -->
+          <text class="dot main-color" id="button{{index}}" data-index="{{index}}" bindtap="toDetail" data-status="{{item.status}}">.\n.\n.</text>
+        </view>
+      </view>
+    </view>
+    <!-- 到底了 -->
+    <view class="font10 color-a text-center mt20 mb20">{{page.completeLoad ? '-已经到底了-':'努力加载中'}}</view>
+  </view>
+</view>
+
+<!-- 气泡弹窗 -->
+<popover id='popover'>
+  <popover-item wx:if="{{currentStatus == '1' || currentStatus == '2'}}" catchtap='handleWorks' data-type="apply" hasline>申请</popover-item>
+  <popover-item wx:if="{{currentStatus == '1' || currentStatus == '2'}}" catchtap='handleWorks' data-type="edit" hasline>编辑</popover-item>
+  <popover-item wx:if="{{currentStatus == '4'}}" catchtap='handleWorks' data-type="detail">详情</popover-item>
+  <popover-item catchtap='handleWorks' data-type="del">删除</popover-item>
+</popover>

@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":100,
+  "navigationBarTitleText": "收支明细",
+  "navigationStyle": "custom"
+}

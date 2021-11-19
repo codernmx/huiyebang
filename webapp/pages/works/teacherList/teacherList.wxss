@@ -1,0 +1,37 @@
+/* pages/works/teacherList/teacherList.wxss */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .item{
+  padding:20rpx;
+  box-sizing: border-box;
+}
+
+.item .left{
+  width: 80%;
+}
+
+.item .left .avatar{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #e5e5e5;
+}
+
+.item .right{
+  width: 20%;
+}
+
+.item .right .radio{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.bottom-btn{
+  width: 290rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin-top: 80rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/works/applyCorrecting/applyCorrecting.wxml-->
+<view class="wrapper page-padding">
+  <view class="box bg-white round8 full-width">
+    <view class="titile font15 bold color3">{{detail.title}}</view>
+    <view class="color-c font10">{{detail.time}} 上传</view>
+    <view class="mt5 color-a font12">{{detail.desc}}</view>
+    <image class="coverImg round8 mt5" mode="aspectFill" src="{{detail.img}}" data-url="{{detail.img}}" catchtap="handlePreView"></image>
+  </view>
+  <view class="bottom-btn main-bg font14 bold white flex align-center justify-center" bindtap="jumpSelectTeacher">申请批改</view>
+</view>

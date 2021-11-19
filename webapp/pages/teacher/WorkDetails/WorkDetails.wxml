@@ -1,0 +1,14 @@
+<!--pages/teacher/WorkDetails/WorkDetails.wxml-->
+<view class="box" bindtap="previousPage">
+    <van-image fit="widthFix" width="100%" height="100%" class="img" src="{{pics}}"></van-image>
+    <view class="bottom">
+        <view catchtap="saveimg" class="button one">
+            <image class="button__img" src="../img/down.png"></image>
+            保存到本地相册
+        </view>
+        <view catchtap="goimg" class="button two">
+            <image class="button__img" src="../img/look.png"></image>
+            查看原图
+        </view>
+    </view>
+</view>

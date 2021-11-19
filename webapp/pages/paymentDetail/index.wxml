@@ -1,0 +1,53 @@
+<view class="top p-relative" bindtap="back">
+    <image src="/common/img/works/add-top.jpg" class="full-width"></image>
+    <van-icon class="title ft16 bold white flex justify-left back"
+        style="padding-top:{{paddingTop}}px;height:{{height}}px;line-height:{{height}}px;position:{{isfixed ? '':''}};background:{{isfixed?'#D93B3C':''}};z-index:999;" name="arrow-left" />
+
+    <text class="title ft16 bold white flex justify-center"
+        style="padding-top:{{paddingTop}}px;height:{{height}}px;line-height:{{height}}px;position:{{isfixed ? '':''}};background:{{isfixed?'#D93B3C':''}};z-index:999;">收支明细</text>
+</view>
+<view class="box">
+    <view class="icon">
+        <view class="centerWord">
+            <view>
+                <open-data type="userNickName"></open-data>
+            </view>
+            <view class="mini">{{info.mobile}}</view>
+            <view>
+                <van-tag type="danger" round>余额：{{info.balance}}</van-tag>
+            </view>
+        </view>
+        <view class="withdrawal" bindtap="withdrawal">申请提现</view>
+    </view>
+
+    <van-divider />
+    <view class="month">2021年10月</view>
+    <view class="list">
+        <block wx:for="{{list}}">
+            <view class="item">
+                <view class="buy">
+                    <text>{{item.reason}}</text>
+                    <text class="mini">10月21日</text>
+                </view>
+                <!-- <view>+30.00</view> -->
+                <view class="red" wx:if="{{item.money>0}}">+{{item.money}}</view>
+                <view wx:else="{{item.money>0}}">{{item.money}}</view>
+            </view>
+            <van-divider />
+        </block>
+
+    </view>
+    <van-divider contentPosition="center" wx:if="{{page.completeLoad}}">到底了</van-divider>
+
+</view>
+
+<van-dialog use-slot title="提现" show="{{ showDialog }}" show-cancel-button bind:close="onClose"
+    bind:confirm="withdrawalConfirm">
+    <van-field model:value="{{ withdrawalValue }}" title-width="100" placeholder="请输入金额" border="{{ false }}"
+        label="提现金额" />
+    <van-field model:value="{{ cash_account }}" title-width="100" placeholder="请输入账号" border="{{ false }}"
+        label="收款账号" />
+    <van-field model:value="{{ remark }}" title-width="100" placeholder="请输入备注" border="{{ false }}" label="备注信息" />
+</van-dialog>
+
+<van-toast id="van-toast" />

@@ -1,0 +1,33 @@
+<!--pages/works/completeWork/completeWork.wxml-->
+<view class="wrapper page-padding">
+  <view class="box bg-white round8 full-width">
+    <view class="titile font15 bold color3">{{beforeDetail.title}}</view>
+    <view class="color-c font10">{{beforeDetail.time}} 上传</view>
+    <view class="mt5 color-a font12">{{beforeDetail.desc}}</view>
+    <view class="img-box p-relative mt5">
+      <image class="coverImg round8" mode="aspectFill" src="{{beforeDetail.img}}" data-url="{{beforeDetail.img}}" catchtap="handlePreView"></image>
+      <view class="tag flex align-center justify-center">
+        <image class="icon" src="/common/img/works/pigai-before.png"></image>
+        <text class="font12 color3 ml5">批改前</text>
+      </view>
+    </view>
+  </view>
+  <view class="box bg-white round8 full-width mt15" wx:if="{{afterDetail.title}}">
+    <view class="titile font15 bold color3">{{afterDetail.title}}</view>
+    <view class="color-c font10">{{afterDetail.time}} 上传</view>
+    <view class="mt5 color-a font12">{{afterDetail.desc}}</view>
+    <view class="img-box p-relative mt5">
+      <image class="coverImg round8" mode="aspectFill" src="{{afterDetail.img}}" data-url="{{afterDetail.img}}" catchtap="handlePreView"></image>
+      <view class="tag flex align-center justify-center">
+        <image class="icon" src="/common/img/works/pigai-after.png"></image>
+        <text class="font12 color3 ml5">批改后</text>
+      </view>
+    </view>
+    <view class="bottom-btn main-bg font12 bold white flex align-center justify-center" bindtap="handleSaveImg">
+        <image class="icon-download" src="/common/img/works/icon-download.png" data-url="{{afterDetail.img}}"></image>
+        <text class="font12 white ml5">保存到本地相册</text>
+    </view>
+  </view>
+</view>
+
+<view class="place"></view>

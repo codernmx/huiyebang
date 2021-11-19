@@ -1,0 +1,15 @@
+<!--pages/teacher/bar.wxml-->
+<view class="box">
+    <view class="box__list" bindtap="teacher">
+        <image class="box__img" src="../img/teacher.png"></image>
+        <view class="text" >名师</view>
+    </view>
+    <view class="box__list on">
+        <image class="box__img" src="../img/pen_on.png"></image>
+       <view class="text on">批改</view>
+    </view>
+    <view class="box__list" bindtap="my">
+        <image class="box__img" src="../img/my.png"></image>
+       <view class="text">我的</view> 
+    </view>
+</view>

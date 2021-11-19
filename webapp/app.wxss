@@ -1,0 +1,23 @@
+/**app.wxss**/
+@import '/common/free.wxss';
+@import '/common/common.wxss';
+
+page{
+  background-color: #f6f6f6;
+}
+
+/* 页边距 */
+.page-padding{
+  padding:30rpx 30rpx 0;
+  box-sizing: border-box;
+}
+
+/* 主题背景色 */
+.main-bg{
+  background-color: #D93B3C;
+}
+
+/* 主题色 */
+.main-color{
+  color:#D93B3C;
+}

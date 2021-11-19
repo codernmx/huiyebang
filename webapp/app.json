@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/works/index",
+    "pages/works/add/add",
+    "pages/works/applyCorrecting/applyCorrecting",
+    "pages/works/teacherList/teacherList",
+    "pages/works/completeWork/completeWork",
+    "pages/works/pay/pay",
+    "pages/my/index",
+    "pages/teacherWorksList/index",
+    "pages/paymentDetail/index",
+    "pages/teacher/HomeworkCorrecting/HomeworkCorrecting",
+    "pages/teacher/TeacherCorrecting/TeacherCorrecting",
+    "pages/teacher/HomeworkCorrectingAfter/HomeworkCorrectingAfter",
+    "pages/teacher/HomeworkCorrectings/HomeworkCorrectings",
+    "pages/teacher/WorkDetails/WorkDetails",
+    "pages/works/teaadd/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "绘也帮",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#D93B3C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "名师",
+        "iconPath": "/common/img/tabbar/tabbar-index.png",
+        "selectedIconPath": "/common/img/tabbar/tabbar-index-active.png"
+      },
+      {
+        "pagePath": "pages/works/index",
+        "text": "作品",
+        "iconPath": "/common/img/tabbar/tabbar-works.png",
+        "selectedIconPath": "/common/img/tabbar/tabbar-works-active.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "/common/img/tabbar/tabbar-personal.png",
+        "selectedIconPath": "/common/img/tabbar/tabbar-personal-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

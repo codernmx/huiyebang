@@ -1,0 +1,37 @@
+<!--pages/teacher/TeacherCorrecting/TeacherCorrecting.wxml-->
+<back title="作品详细"></back>
+<bottom-bar bindtap="previousPage"></bottom-bar>
+<view class="box">
+    <view class="top">
+        <view class="top__h">{{list.name}}</view>
+        <view class="top__t">{{list.created_time_f}}</view>
+    </view>
+        <view class="text">{{list.summary}}</view>
+
+       <view class="img">
+     
+        <view class="imgbox">
+            <image class="imgbox_img" src="../img/addimg.png" mode="aspectFill"></image>
+            jpg.   png.   gif.
+        </view>
+        <van-uploader
+         max-count="1" preview-size="562rpx" class="imgbox"  style="opacity: {{uploaderon}};"
+         accept="image" file-list="{{ fileList }}" bind:after-read="updateimg" bind:delete="daleteimg"
+        ></van-uploader>
+       </view>
+</view>
+<view class="teacher__box">
+    <van-field value='{{value}}'
+    size="small"
+    type="textarea"
+    placeholder="评语"
+    border="{{ false }}"
+    bind:change="onChange"
+    autosize="{{textheight}}">
+    </van-field>
+</view>
+<view class="buttom save" bindtap="correcting">
+    提交批改
+</view>
+
+

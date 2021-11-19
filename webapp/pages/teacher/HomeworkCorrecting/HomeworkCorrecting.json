@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bottom-bar":"../bar/bar",
+    "back":"../back/back"
+  },
+  "navigationStyle": "custom"
+
+}

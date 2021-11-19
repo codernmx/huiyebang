@@ -1,0 +1,44 @@
+/* pages/teacher/TeacherCorrecting/TeacherCorrecting.wxss */
+page{
+background: #F6F6F6;
+}
+.box{
+    width: 620rpx;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    padding: 25rpx 16rpx;
+    box-sizing: border-box;
+    margin: 54rpx auto;
+}
+.top{
+    display: flex;
+}
+.top__h{
+    font-size: 30rpx;
+font-family: Source Han Sans CN;
+font-weight: 500;
+color: #1D1D1D;
+line-height: 30rpx;
+}
+.top__t{
+    font-size: 20rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #C5C5C5;
+line-height: 30rpx;
+}
+.text{
+    font-size: 24rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #A4A3A3;
+line-height: 34rpx;
+margin:23rpx 8rpx 32rpx 8rpx;
+}
+.img{
+    width: 585rpx;
+height: 433rpx;
+border-radius: 20px;
+background-color:  #FFE9E6;
+}

@@ -1,0 +1,21 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="page">
+  <view wx:for="{{list}}" class="itemBox">
+    <view class="headBox">
+      <view class="head">
+        <!-- <open-data type="userAvatarUrl"></open-data> -->
+        <van-image width="100%" height="100%" src="{{item.avatar}}" />
+      </view>
+      <view class="headRight">
+        <view class="title">{{item.name}}</view>
+        <view class="tit">{{tools.cut(item.created_time_f)}} 发布</view>
+      </view>
+    </view>
+    <view class="word">{{item.summary}}</view>
+    <view class="img">
+      <!-- <image src="{{item.pics}}"></image> -->
+      <van-image bind:click="previewImg" data-url="{{item.pics}}" width="100%" height="100%" fit="cover" src="{{item.pics}}" />
+    </view>
+  </view>
+  <van-divider contentPosition="center">到底了</van-divider>
+</view>

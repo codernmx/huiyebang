@@ -1,0 +1,19 @@
+/* pages/teacher/back/back.wxss */
+.box{
+    position: fixed;
+    left: 41rpx;
+    top: 105rpx;
+    width: 45rpx;
+    height: 45rpx;
+}
+.back_icon{
+    margin: 2rpx 0 0 2rpx;
+    width: 40rpx;
+    height:40rpx;
+}
+.top{
+    width: 100%;
+    margin-top: 110rpx;
+    text-align: center;
+    font-size: 29rpx;
+}

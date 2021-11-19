@@ -1,0 +1,56 @@
+/* pages/works/completeWork/completeWork.wxss */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.box{
+  padding:20rpx;
+  box-sizing: border-box;
+}
+
+.box .img-box{
+  width: 100%;
+  height: 435rpx;
+}
+
+.box .img-box .coverImg{
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+.img-box .tag{
+  width: 154rpx;
+  height: 50rpx;
+  background-color: #ffe9e6;
+  border-radius: 10rpx;
+  position: absolute;
+  right: 0;
+  bottom:0;
+}
+
+.img-box .tag .icon{
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 6rpx;
+}
+
+.bottom-btn{
+  width: 290rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin:0 auto;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.bottom-btn .icon-download{
+  width: 32rpx;
+  height: 28rpx;
+}
+
+.place{
+  height: 200rpx;
+}

@@ -1,0 +1,438 @@
+/* 通用css ******************************************************************************************************************************/
+
+.full-width{
+	width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+} 
+
+/* 去除button默认样式 */
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  padding:0 !important;
+  line-height: inherit;
+}
+
+/* 圆角 ***********************************************************************************************************************************/
+.round{
+	border-radius: 50%;
+}
+
+.round4{
+  border-radius: 8rpx;
+}
+
+.round6{
+  border-radius: 12rpx;
+}
+
+.round8{
+  border-radius: 16rpx;
+}
+
+/* 间距 ************************************************************************************************************************************/
+
+.border-box{
+	box-sizing: border-box;
+}
+
+/* padding-top */
+.pt5 {
+  padding-top: 10rpx;
+}
+
+.pt10 {
+  padding-top: 20rpx;
+}
+
+.pt15 {
+  padding-top: 30rpx;
+}
+
+.pt20 {
+  padding-top: 40rpx;
+}
+
+/* padding-bottom */
+.pb5 {
+  padding-bottom: 10rpx;
+}
+
+.pb10 {
+  padding-bottom: 20rpx;
+}
+
+.pb15 {
+  padding-bottom: 30rpx;
+}
+
+.pb20 {
+  padding-bottom: 40rpx;
+}
+
+/* padding-left */
+
+.pl5 {
+  padding-left: 10rpx;
+}
+
+.pl10 {
+  padding-left: 20rpx;
+}
+
+.pl15 {
+  padding-left: 30rpx;
+}
+
+.pl20 {
+  padding-left: 40rpx;
+}
+
+/* padding-right */
+.pr5 {
+  padding-right: 10rpx;
+}
+
+.pr10 {
+  padding-right: 20rpx;
+}
+
+.pr15 {
+  padding-right: 30rpx;
+}
+
+.pr20 {
+  padding-right: 40rpx;
+}
+
+/* margin-top */
+.mt5 {
+  margin-top: 10rpx;
+}
+
+.mt10 {
+  margin-top: 20rpx;
+}
+
+.mt15 {
+  margin-top: 30rpx;
+}
+
+.mt20 {
+  margin-top: 40rpx;
+}
+
+.mt25 {
+  margin-top: 50rpx;
+}
+
+.mt30 {
+  margin-top: 60rpx;
+}
+
+.mt35 {
+  margin-top: 70rpx;
+}
+
+/* margin-bottom */
+.mb5 {
+  margin-bottom: 10rpx;
+}
+
+.mb10 {
+  margin-bottom: 20rpx;
+}
+
+.mb15 {
+  margin-bottom: 30rpx;
+}
+
+.mb20 {
+  margin-bottom: 40rpx;
+}
+/* margin-left */
+.ml5 {
+  margin-left: 10rpx;
+}
+
+.ml10 {
+  margin-left: 20rpx;
+}
+
+.ml15 {
+  margin-left: 30rpx;
+}
+
+.ml20 {
+  margin-left: 40rpx;
+}
+
+/* margin-right */
+
+.mr5 {
+  margin-right: 10rpx;
+}
+
+.mr10 {
+  margin-right: 20rpx;
+}
+
+.mr15 {
+  margin-right: 30rpx;
+}
+
+.mr20 {
+  margin-right: 40rpx;
+}
+
+/* font ***************************************************************************************************************************************************/
+.bold{
+	font-weight: bold;
+} 
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.black{
+	color:#323232;
+}
+
+.white{
+	color:#fff;
+}
+
+.color2 {
+  color: #222;
+}
+
+.color3 {
+  color: #333;
+}
+
+.color4 {
+  color: #444;
+}
+
+.color5 {
+  color: #555;
+}
+
+.color6 {
+  color: #666;
+}
+
+.color7 {
+  color: #777;
+}
+
+.color8 {
+  color: #888;
+}
+
+.color9 {
+  color: #999;
+}
+
+.color-a{
+	color:#aaa;
+}
+
+.color-b{
+	color:#bbb;
+}
+
+.color-c{
+	color:#ccc;
+}
+
+.color-d{
+	color:#ddd;
+}
+
+.color-e{
+	color:#eee;
+}
+
+.font {
+  font-size: 32rpx;
+}
+
+.font19 {
+  font-size: 38rpx;
+}
+
+.font18 {
+  font-size: 36rpx;
+}
+
+.font17 {
+  font-size: 34rpx;
+}
+
+.font16 {
+  font-size: 32rpx;
+}
+
+.font15 {
+  font-size: 30rpx;
+}
+
+.font14 {
+  font-size: 28rpx;
+}
+
+.font13 {
+	font-size: 26rpx;
+}
+
+.font12 {
+  font-size: 24rpx;
+}
+
+.font11 {
+  font-size: 22rpx;
+}
+
+.font10 {
+  font-size: 20rpx;
+}
+
+/* 背景 ********************************************************************************************************************************************/
+.b-white{
+	background-color: #fff;
+}
+
+/* 占位 *****************************************************************************************************************************************/
+.place {
+  width: 100%;
+  height: 130rpx;
+}
+
+/* 超出部分隐藏 ************************************************************************************************************************************/
+.ellipsis-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  /* 将元素设为盒子伸缩模型显示 */
+  -webkit-box-orient: vertical;
+  /* 伸缩方向设为垂直方向 */
+  -webkit-line-clamp: 2;
+  /* 超出2行隐藏，并显示省略号 */
+}
+
+.ellipsis-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  /* 将元素设为盒子伸缩模型显示 */
+  -webkit-box-orient: vertical;
+  /* 伸缩方向设为垂直方向 */
+  -webkit-line-clamp: 3;
+  /* 超出3行隐藏，并显示省略号 */
+}
+
+/* 单行文本超出部分打点显示 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 单行文本超出截断 */
+.unEllipsis {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* flex布局 **********************************************************************************************************************************/
+.flex{
+	display: flex;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.justify-between{
+	justify-content: space-between;
+}
+
+.justify-around{
+	justify-content: space-around;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.justify-end{
+	justify-content: flex-end;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.align-end{
+	align-items: flex-end;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.nowrap{
+	flex-wrap: nowrap;
+}
+
+.flex1{
+	flex:1;
+	width:0;
+}
+
+/* scroll-view **************************************************************************************************************************************/
+.scroll-row{
+	width: 100%;
+	white-space: nowrap;
+}
+
+.scroll-row-item{
+	display: inline-block !important;
+}
+
+/* 定位 ********************************************************************************************************************************************/
+.p-relative{
+	position: relative;
+}
+
+/*半椭圆背景****************************************************************************************************************************************/
+.bg-ellipse{
+    width: 100%;
+    height:300rpx;
+    background-color: red;
+    clip-path: ellipse(90% 100% at 50% 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-white{
+  background-color: #fff;
+}

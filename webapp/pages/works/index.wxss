@@ -1,0 +1,75 @@
+/* pages/works/index.wxss */
+.add-card {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.add-card .left {
+  width: 75%;
+}
+
+.add-card .left .add-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+.add-card .right {
+  width: 25%;
+}
+
+.add-card .right image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.content-title .tab{
+  color:#c5c5c5;
+}
+
+.content-title .tab text{
+  color:#c5c5c5;
+  font-size: 24rpx;
+}
+
+.content-title .tab .tabActive{
+  color:#333;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.content-wrapper .item{
+  padding:20rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.item .coverImg{
+  width: 335rpx;
+  height: 158rpx;
+  background-color: #e5e5e5;
+}
+
+.item .bottom .time{
+  width: 80%;
+}
+
+.item .bottom .btn{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.item .bottom .dot{
+  white-space: pre-wrap;
+  line-height: 12rpx;
+  height: 50rpx;
+}
+
+.place{
+  width: 100%;
+  height: 140rpx;
+}

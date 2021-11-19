@@ -1,0 +1,31 @@
+<!--pages/works/add/add.wxml-->
+<view class="top p-relative">
+  <image src="/common/img/works/add-top.jpg" class="full-width"></image>
+  <text class="title ft16 bold white flex justify-center"
+      style="padding-top:{{paddingTop}}px;height:{{height}}px;line-height:{{height}}px;position:{{isfixed ? 'fixed':''}};background:{{isfixed?'#D93B3C':''}};z-index:999;">{{submitType == 'add'?'添加':'修改'}}作品</text>
+  <text class="bold white" style="font-size:40rpx;">{{submitType == 'add'?'添加你的新作品':'修改你的作品'}}</text>
+</view>
+<view class="content bg-white">
+  <view class="form-box">
+    <van-field value="{{ formData.title }}" placeholder-style="color:#aaa;" custom-style="background:#FFE9E6;border-radius:20rpx;height:80rpx;" placeholder="标题"
+      border="{{ false }}" data-type="title" bind:change="onInputChange" />
+    <van-field value="{{ formData.desc }}" placeholder-style="color:#aaa;" custom-style="background:#FFE9E6;margin-top:40rpx;border-radius:20rpx;height:80rpx;"
+      placeholder="说明" border="{{ false }}" data-type="desc" bind:change="onInputChange" />
+    <view class="upload mt20">
+      <view class="color-a font14">上传</view>
+      <view class="upload-btn bg-white mt5">
+        <van-uploader file-list="{{ fileList }}" use-before-read bind:before-read="beforeRead" bind:after-read="afterRead" bind:delete="deleteImg" max-count="{{1}}" deletable imageFit="aspectFill">
+          <view class="upload-desc flex flex-column align-center justify-center" wx:if="{{!fileList.length}}">
+             <image src="/common/img/works/upload-img.png"></image>
+             <text class="color-a font12">.jpg .png .gif</text>
+          </view>
+        </van-uploader>
+      </view>
+    </view>
+    <!-- 底部按钮 -->
+    <view class="btn-box flex flex-column align-center">
+       <view class="btn btn1 main-bg white bold font14 flex justify-center align-center" bindtap="submit">确认保存</view>
+       <view class="btn btn2 mt10 bold font14 color-a flex justify-center align-center" bindtap="back">取消返回</view>
+    </view>
+  </view>
+</view>

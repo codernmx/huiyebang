@@ -1,0 +1,104 @@
+<image src="/common/img/works/add-top.jpg" class="full-width"></image>
+<view class="box">
+    <view class="icon" wx:if="{{isLogin}}">
+        <!-- <image></image>
+    <text>登录</text> -->
+        <view style="display: flex;">
+            <view class="head">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view class="centerWord">
+                <view>
+                    <open-data type="userNickName"></open-data>
+                </view>
+                <view class="mini">一位闲暇的小画家</view>
+                <view class="mini">{{userInfo.phone}}</view>
+                <view>
+                    <van-tag type="danger" round>余额：{{userInfo.balance}}</van-tag>
+                </view>
+            </view>
+        </view>
+        <view>
+            <van-icon name="arrow" />
+        </view>
+    </view>
+    <view class="noLogin" bindtap="showLogin" wx:else="{{isLogin}}">
+        <image class="noLoImg" src="../../common/img/my/head.png"></image>
+        <text>登录</text>
+    </view>
+
+
+
+    <van-divider wx:if="{{userInfo.is_teacher == 1}}" />
+    <view class="list" bindtap="toTeacherList"  data-user="{{userInfo}}" wx:if="{{userInfo.is_teacher == 1}}">
+        <view class="listImg">
+            <image class="lImg" src="../../common/img/my/tea.png"></image>
+            <text style="margin-left: 40rpx;">教师作品上传</text>
+        </view>
+        <view>
+            <van-icon name="arrow" />
+        </view>
+    </view>
+    <van-divider />
+
+    <view class="list" bindtap="toPayment" data-user="{{userInfo}}">
+        <view class="listImg">
+            <image class="lImg" src="../../common/img/my/out.png"></image>
+            <text style="margin-left: 40rpx;">收支明细</text>
+        </view>
+        <view>
+            <van-icon name="arrow" />
+        </view>
+    </view>
+    <van-divider />
+
+    <view class="list" wx:if="{{userInfo.is_teacher == 3333}}">
+        <view class="listImg">
+            <image class="lImg" src="../../common/img/my/in.png"></image>
+            <text style="margin-left: 40rpx;">收费明细</text>
+        </view>
+        <view>
+            <van-icon name="arrow" />
+        </view>
+    </view>
+    <view class="list" wx:if="{{userInfo.is_teacher == 1}}" bindtap="toHomeworkCorrecting">
+        <view class="listImg">
+            <image class="lImg" src="../../common/img/my/in.png"></image>
+            <text style="margin-left: 40rpx;">待批改</text>
+        </view>
+        <view>
+            <van-icon name="arrow" />
+        </view>
+    </view>
+
+    <van-divider wx:if="{{userInfo.is_teacher}}" />
+    <view class="connect">
+        <view class="one">
+            <image class="conImg" src="../../common/img/my/connect.png"></image>
+            <text>联系客服</text>
+        </view>
+        <view class="two">
+            <image class="conImg" src="../../common/img/my/opi.png"></image>
+            <!-- <van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" /> -->
+            <text>意见反馈</text>
+        </view>
+    </view>
+</view>
+
+<!-- 弹窗 -->
+<van-popup show="{{ showLogin }}" round position="bottom" custom-style="height: 50%" bind:close="onClose">
+    <view class="viewDialog">
+        <image class="dialogImg" src="../../common/img/my/head.png"></image>
+        <!-- <view></view> -->
+        <view class="apply" wx:if="{{!hasUserInfo}}">
+            <button bindtap="getUserInfo" style="color: #FFFFFF;">获取用户信息</button>
+        </view>
+        <view class="apply" wx:else="{{!hasUserInfo}}">
+            <button open-type="getPhoneNumber" style="color: #FFFFFF;"
+                bindgetphonenumber="getPhoneNumber">申请获取手机号</button>
+        </view>
+
+    </view>
+</van-popup>
+
+<van-toast id="van-toast" />

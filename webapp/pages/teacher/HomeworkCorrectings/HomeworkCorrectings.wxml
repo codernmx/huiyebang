@@ -1,0 +1,12 @@
+<!--pages/teacher/HomeworkCorrectings/HomeworkCorrectings.wxml-->
+<back title="待批改作品"></back>
+<bottom-bar ></bottom-bar>
+<view class="box"   bindtap="detailed">
+    <view class="top">
+        <view class="top__h">{{list.name}}</view>
+        <view class="top__t">{{list.created_time_f}}</view>
+    </view>
+        <view class="text">{{list.summary}}</view>
+       <image class="img" src="{{list.pics}}" catchtap="pics" mode="aspectFill"></image>
+    
+</view>

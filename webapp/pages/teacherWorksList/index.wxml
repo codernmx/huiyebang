@@ -1,0 +1,38 @@
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class="box">
+
+    <view class="icon">
+        <view style="display: flex;">
+            <view class="head">
+                <open-data type="userAvatarUrl"></open-data>
+            </view>
+            <view class="centerWord">
+                <view>
+                    <open-data type="userNickName"></open-data>
+                </view>
+                <view class="mini">一位闲暇的小画家</view>
+                <view class="mini">{{userInfo.phone}}</view>
+                <view class="mini">{{userInfo.iphone}}</view>
+            </view>
+        </view>
+        <view>
+            <van-icon bindtap="openAdd" name="add-o" color="red" style="font-size: 50rpx;" />
+        </view>
+    </view>
+
+    <view class="listBox" wx:for="{{list}}">
+        <view class="img">
+            <van-image bind:click="previewImg" data-url="{{item.pics}}" width="100%" height="100%" fit="fill" src="{{item.pics}}" />
+        </view>
+        <view class="title">
+            <text>{{item.name}}</text>
+            <text class="date">{{tools.cut(item.created_time_f)}}上传</text>
+        </view>
+        <view>
+            <view class="del" bindtap="dele" data-info="{{item}}">删除</view>
+        </view>
+    </view>
+    <van-divider contentPosition="center">已经到底了</van-divider>
+</view>
+
+<van-dialog id="van-dialog" />

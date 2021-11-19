@@ -1,0 +1,5 @@
+<!--pages/teacher/back/back.wxml-->
+<view class="box" bindtap="back">
+    <image class="back_icon" src="../img/back.png"></image>
+</view>
+<view class="top">{{title}}</view>

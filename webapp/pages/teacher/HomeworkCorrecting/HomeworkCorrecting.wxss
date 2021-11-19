@@ -1,0 +1,120 @@
+/* pages/teacher/HomeworkCorrecting/HomeworkCorrecting.wxss */
+page{
+background: #F6F6F6;
+}
+.top{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 80rpx;
+    margin-top: 58rpx;
+    
+}
+.top__left{
+    font-size: 28rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #1D1D1D;
+line-height: 30rpx;
+}
+.top__right{
+   
+    display: flex;
+    font-size: 16rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #C5C5C5;
+line-height: 30rpx;
+}
+.top__right__two{
+    margin: 0 9rpx;
+}
+.on{
+    font-size: 22rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #1D1D1D;
+line-height: 30rpx;
+margin: 0 13rpx;
+}
+.content{
+    height: 75vh;
+    width: 620rpx;
+margin: auto;
+}
+.box__lists{
+    box-sizing: border-box;
+    margin: 20rpx auto;
+    width: 620rpx;
+height: 182rpx;
+background: #FFFFFF;
+border-radius: 20rpx;
+padding: 13rpx 0 0 16rpx;
+display: flex;
+}
+.box__lists__img{
+width: 334rpx;
+height: 157rpx;
+border-radius: 20rpx;
+background-color: #FFE9E6;
+}
+.box__lists__right{
+    margin-left: 36rpx;
+    width: 180rpx;
+    height: auto;
+}
+.lists__right__h{
+    font-size: 30rpx;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #1D1D1D;
+    line-height: 30rpx;
+    margin-top: 11rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lists__right__m{
+    font-size: 24rpx;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #D93B3C;
+    line-height: 30rpx;
+    margin-top: 5rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lists__right__c{
+    font-size: 24rpx;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #A4A3A3;
+    line-height: 30rpx;
+    margin-top: 27rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lists__right__t{
+    width: 300rpx;
+    font-size: 16rpx;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #A4A3A3;
+    line-height: 30rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bottom__text{
+    width: 100%;
+    text-align: center;
+    font-size: 16rpx;
+font-family: Source Han Sans CN;
+font-weight: 400;
+color: #A4A3A3;
+line-height: 30rpx;
+margin-top:30rpx ;
+}

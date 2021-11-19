@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":100,
+  "navigationBarTitleText": "绘也帮"
+}

@@ -1,0 +1,20 @@
+<!--pages/teacher/HomeworkCorrectingAfter/HomeworkCorrectingAfter.wxml-->
+<back title="作品详细"></back>
+<bottom-bar bindtap="previousPage"></bottom-bar>
+<view class="box">
+    <view class="top">
+        <view class="top__h">{{list.name}}</view>
+        <view class="top__t">{{list.created_time_f}}</view>
+    </view>
+        <view class="text">{{list.summary}}</view>
+       <image class="img" src="{{pics}}" mode="aspectFill"></image>
+</view>
+<view class="teacher__box">
+{{value}}
+</view>
+<view class="buttom save" bindtap="confirm">
+    确认保存
+</view>
+<view class="buttom Correct" bindtap="previousPag">
+    批改
+</view>

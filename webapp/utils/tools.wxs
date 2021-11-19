@@ -1,0 +1,7 @@
+var cut = function (str) {
+        if (str)
+                return str.slice(0, 10)
+};
+module.exports = {
+        cut: cut,
+}
